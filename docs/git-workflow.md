@@ -163,6 +163,29 @@ or:
 feat: adding player validation
 ```
 
+### Gitmoji (Optional)
+
+You may optionally use [Gitmoji](https://gitmoji.dev/) to make commit messages more visual.
+
+When using Gitmoji, keep the regular commit convention:
+
+```text
+<emoji> <type>: <description>
+```
+
+Examples:
+
+```text
+✨ feat: add player name input
+🐛 fix: prevent empty player names
+📝 docs: update coding guidelines
+♻️ refactor: simplify player validation
+✅ test: add player validation tests
+🔧 chore: update eslint configuration
+```
+
+Gitmoji is optional. The commit type and a clear description are still required.
+
 ---
 
 ## 5. Before Pushing
