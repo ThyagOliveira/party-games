@@ -248,7 +248,100 @@ const fullName = `${firstName} ${lastName}`;
 
 ---
 
-## 7. Comments
+## 7. Styling
+
+The project uses **SCSS** for styling and **CSS Modules** for styles that belong to specific pages and components.
+
+### Component and page styles
+
+Use CSS Modules for styles that belong to a specific component or page.
+
+CSS Module files should use the `.module.scss` extension and should be kept close to the component or page that uses them.
+
+```text
+Home/
+├── Home.tsx
+└── Home.module.scss
+```
+
+Import styles as a module:
+
+```tsx
+import styles from "./Home.module.scss";
+
+function Home() {
+  return <main className={styles.container}>Party Games</main>;
+}
+```
+
+Avoid creating global classes for styles that belong to a specific component or page.
+
+### Global styles
+
+Styles shared by the entire application belong in `src/styles/`.
+
+The project currently organizes global styles into:
+
+```text
+styles/
+├── _reset.scss
+├── _themes.scss
+├── _tokens.scss
+└── global.scss
+```
+
+Files prefixed with `_` are Sass partials intended to be loaded by other Sass files.
+
+`global.scss` is the global stylesheet entry point imported by the application.
+
+### Design tokens
+
+Prefer existing design tokens instead of hardcoding repeated design values.
+
+```scss
+// Avoid
+.card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+// Prefer
+.card {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+}
+```
+
+For colors, prefer semantic theme variables whenever an appropriate one exists.
+
+```scss
+// Avoid
+.card {
+  background: #f6f7f9;
+  color: #0a0a0d;
+}
+
+// Avoid when a semantic token already exists
+.card {
+  background: var(--gray-100);
+}
+
+// Prefer
+.card {
+  background: var(--card-color);
+  color: var(--text-color);
+}
+```
+
+Primitive color tokens define available colors, while theme variables describe how those colors are used by the interface.
+
+Before adding a hardcoded value or creating a new token, check whether an existing token already represents the intended value.
+
+Do not create new tokens or styling abstractions before they are actually needed.
+
+---
+
+## 8. Comments
 
 Comments should explain **why** something is done, not simply repeat what the code already says.
 
@@ -273,7 +366,7 @@ Do not keep commented-out code in the repository. Git already keeps the history 
 
 ---
 
-## 8. Files and Folders
+## 9. Files and Folders
 
 Use meaningful names for files and folders.
 
@@ -300,7 +393,7 @@ The project structure may evolve as the application grows. Do not introduce new 
 
 ---
 
-## 9. Imports
+## 10. Imports
 
 Keep imports organized and remove unused imports.
 
@@ -310,7 +403,7 @@ ESLint should catch many of these issues automatically.
 
 ---
 
-## 10. Formatting
+## 11. Formatting
 
 Code formatting is handled by **Prettier**.
 
@@ -339,7 +432,7 @@ The Prettier configuration is the source of truth for formatting rules.
 
 ---
 
-## 11. Linting
+## 12. Linting
 
 The project uses **ESLint** to detect common problems and enforce code quality rules.
 
@@ -361,7 +454,7 @@ If a rule needs to be disabled or changed, understand why the rule exists and di
 
 ---
 
-## 12. Before Submitting Code
+## 13. Before Submitting Code
 
 Before opening a Pull Request:
 
@@ -381,7 +474,7 @@ Fix any errors before submitting the Pull Request.
 
 ---
 
-## 13. Keep the Guidelines Updated
+## 14. Keep the Guidelines Updated
 
 These guidelines are not meant to define every possible coding decision.
 

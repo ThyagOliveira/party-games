@@ -143,7 +143,61 @@ Learn the fundamentals and use the documentation as a reference when you need so
 
 ---
 
-## 4. JavaScript
+## 4. Sass / SCSS
+
+Sass extends CSS with additional features that can help organize and maintain stylesheets.
+
+The Party Games project uses the **SCSS syntax** together with CSS Modules.
+
+Before using SCSS extensively, understand regular CSS first.
+
+### Start Here
+
+**Sass — Documentation**
+
+https://sass-lang.com/documentation/
+
+Focus initially on:
+
+- SCSS syntax
+- nesting
+- partials
+- `@use`
+
+You do not need to learn advanced Sass features before contributing to the project.
+
+### CSS Variables
+
+The project uses CSS custom properties for design tokens and themes.
+
+**MDN — CSS Custom Properties**
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties
+
+Understand how variables declared with `--` and accessed with `var()` work.
+
+It is also useful to understand the difference between **CSS custom properties** and **Sass variables**.
+
+### CSS Modules
+
+Page and component styles in the project use CSS Modules to keep CSS classes locally scoped.
+
+**Vite — CSS Modules**
+
+https://vite.dev/guide/features.html#css-modules
+
+You will commonly see files such as:
+
+```text
+Home.module.scss
+PlayerCard.module.scss
+```
+
+You do not need to study Sass or CSS Modules in depth before starting.
+
+Learn the basics first and explore additional features when they become necessary.
+
+## 5. JavaScript
 
 JavaScript provides the programming logic used by web applications.
 
@@ -187,7 +241,7 @@ Use this when you need detailed information about a specific JavaScript feature.
 
 ---
 
-## 5. TypeScript
+## 6. TypeScript
 
 TypeScript extends JavaScript by adding static typing.
 
@@ -232,7 +286,7 @@ Start with the basic types and learn more advanced features when the project req
 
 ---
 
-## 6. React
+## 7. React
 
 React is the library used to build the user interface of Party Games.
 
@@ -279,7 +333,7 @@ Use the reference when you need details about a specific React API or Hook.
 
 ---
 
-## 7. Vite
+## 8. Vite
 
 Vite is the build tool and development server used by the project.
 
@@ -297,7 +351,7 @@ Learn more about it when you need to understand or modify the project's build co
 
 ---
 
-## 8. npm
+## 9. npm
 
 npm is used to manage the project's JavaScript dependencies and scripts.
 
@@ -321,7 +375,7 @@ You do not need to memorize npm commands. Learn the basic workflow and use the d
 
 ---
 
-## 9. ESLint & Prettier
+## 10. ESLint & Prettier
 
 The project uses ESLint and Prettier to help maintain consistent and clean code.
 
@@ -351,7 +405,7 @@ docs/coding-guidelines.md
 
 ---
 
-## 10. Browser Developer Tools
+## 11. Browser Developer Tools
 
 Modern browsers provide development tools that are extremely useful when building web applications.
 
@@ -372,7 +426,7 @@ The browser console will become one of your most useful tools when debugging fro
 
 ---
 
-## 11. How to Learn During the Project
+## 12. How to Learn During the Project
 
 You do not need to understand an entire technology before using it.
 
@@ -407,7 +461,7 @@ The goal is not only to finish the task, but also to understand the code you are
 
 ---
 
-## 12. Additional Resources
+## 13. Additional Resources
 
 The resources in this document are intentionally limited.
 
