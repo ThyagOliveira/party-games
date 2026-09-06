@@ -1,0 +1,31 @@
+@use "./reset.scss";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family:
+    var(--font-geist-sans),
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: var(--placeholder-color);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary-color) 28%, transparent);
+}

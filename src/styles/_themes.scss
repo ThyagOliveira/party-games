@@ -1,0 +1,59 @@
+:root {
+  --primary-color: var(--blue-500);
+  --on-primary-color: var(--white);
+  --secondary-color: var(--sky-500);
+
+  --success-color: var(--green-600);
+  --danger-color: var(--red-500);
+  --warning-color: var(--amber-500);
+  --info-color: var(--sky-500);
+
+  --background-color: var(--white);
+  --surface-color: var(--gray-50);
+  --card-color: var(--gray-100);
+  --input-color: var(--white);
+
+  --border-color: rgba(0, 0, 0, 0.12);
+
+  --text-color: var(--dark-950);
+  --text-secondary-color: var(--dark-900);
+  --muted-text-color: var(--dark-850);
+  --placeholder-color: var(--dark-850);
+
+  --disabled-color: var(--slate-700);
+
+  --switch-track-off-color: rgba(0, 0, 0, 0.16);
+  --switch-thumb-off-color: var(--text-color);
+
+  --focus-ring-color: color-mix(in srgb, var(--primary-color) 30%, transparent);
+}
+
+[data-theme="dark"] {
+  --primary-color: var(--purple-500);
+  --on-primary-color: var(--white);
+  --secondary-color: var(--purple-400);
+
+  --success-color: var(--green-400);
+  --danger-color: var(--red-400);
+  --warning-color: var(--amber-400);
+  --info-color: var(--blue-400);
+
+  --background-color: var(--black);
+  --surface-color: var(--dark-950);
+  --card-color: var(--dark-850);
+  --input-color: var(--dark-900);
+
+  --border-color: rgba(255, 255, 255, 0.14);
+
+  --text-color: var(--white);
+  --text-secondary-color: var(--gray-50);
+  --muted-text-color: var(--gray-100);
+  --placeholder-color: var(--gray-300);
+
+  --disabled-color: var(--gray-500);
+
+  --switch-track-off-color: rgba(255, 255, 255, 0.14);
+  --switch-thumb-off-color: var(--text-color);
+
+  --focus-ring-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+}
