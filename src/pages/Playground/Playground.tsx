@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import Card from "../../components/Card/Card";
+import Card from "@/components/Card/Card";
 
 type PlaygroundView = "button" | "input" | "card";
 
@@ -15,7 +15,9 @@ export default function Playground() {
   );
 
   const [active, setActive] = useState<PlaygroundView>("card");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [theme, setTheme] = useState<"dark" | "light">("dark");
 
   useEffect(() => {
