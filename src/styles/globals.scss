@@ -1,4 +1,6 @@
 @use "./reset.scss";
+@use "./tokens";
+@use "./themes";
 
 html {
   font-size: 16px;
