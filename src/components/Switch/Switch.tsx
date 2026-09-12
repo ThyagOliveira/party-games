@@ -1,4 +1,4 @@
-import "./switch.scss";
+import "./Switch.module.scss";
 
 export default function Switch() {
   return (
