@@ -1,0 +1,67 @@
+.Switch {
+  /*botao em si*/
+  width: 80px;
+  height: 42px;
+  position: relative; /* faz o trilho nao se mover */
+  display: inline-block; /*entra dentro do texto */
+
+  /*transform: scale(1.5);                          /*pode mudar tamanho do botão mais facilmente*/
+  /*transform-origin: center;*/
+}
+
+.switch input {
+  /*isso é o que está por trás do nosso Switch (quadrado)*/
+  opacity: 0; /* queremos fazer isso ser invisivel*/
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; /*caminho da bolinha*/
+  background-color: rgba(128, 128, 128, 0.133);
+  -webkit-transition: 0.5s;
+  transition: 0.6s;
+}
+
+.slider:before {
+  /*bolinha*/
+  position: absolute;
+  content: "";
+  height: 34px;
+  width: 34px;
+  background-color: rgba(255, 255, 255, 0.552);
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  /*Switch ON*/
+  background-color: rgb(121, 17, 121);
+}
+
+input:focus + .slider {
+  /*recebe o mouse ou foco do teclado  por seleção*/
+  box-shadow: 0 0 1px rgb(121, 17, 121); /* deslocamento do borro em x; em y; blur; cor do blur;*/
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  /*curvatura do botao*/
+  border-radius: 50%;
+}
