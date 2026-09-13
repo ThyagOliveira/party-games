@@ -1,0 +1,18 @@
+.Selector {
+
+    /* Format */
+    height: 40px;
+    width: 100px;
+    border: 1px solid var(--Gray-850);
+
+    /* Textz*/
+    font-family: Arial;
+    font-size: 10px;
+    text-align: center;
+
+    /* Colors */
+    background-color: var(--Dark-950);
+    color: var(--white);
+
+     &:focus {border-color: var(--Blue-500) ;}
+}
