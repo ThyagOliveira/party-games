@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Playground from "@/pages/Playground/Playground";
 import RootLayout from "@/layouts/RootLayout";
+import Example from "@/pages/Example/Example";
 
 export const router = createBrowserRouter([
   {
@@ -9,6 +10,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Playground />,
+      },
+      {
+        path: "/example",
+        element: <Example />,
       },
     ],
   },
