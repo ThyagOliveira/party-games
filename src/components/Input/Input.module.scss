@@ -1,0 +1,26 @@
+input {
+  width: 100%; //coloca  o espaço o maior possível
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px; //adiona margem entre os input fields de texto
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(217, 0, 255); //desing para input tipo texto (border-upper)
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  //desing para input tipo texto (border-bottom)
+  border: none;
+  border-bottom: 2px solid rgb(217, 0, 255);
+}
+
+input[type="text"] {
+  background-color: #3cbc8d;
+  color: rgb(246, 249, 251);
+}
